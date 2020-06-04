@@ -1,4 +1,12 @@
 {
+    "name": "yangyang54549/pindd-sdk",
+    "description": "拼多多开放平台sdk",
+    "authors": [
+        {
+            "name": "yangyang54549",
+            "email": "xiangyang23333@163.com"
+        }
+    ],
     "require": {
         "php": "^5.5|^7.0",
         "ext-curl": "*",
