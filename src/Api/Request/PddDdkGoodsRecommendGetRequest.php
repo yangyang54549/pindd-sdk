@@ -46,9 +46,9 @@ class PddDdkGoodsRecommendGetRequest extends PopBaseHttpRequest
 	private $catId;
 
 	/**
-	* @JsonProperty(List<Long>, "goods_ids")
+	* @JsonProperty(List<Long>, "goods_sign_list")
 	*/
-	private $goodsIds;
+	private $goodsSignList;
 
 	protected function setUserParams(&$params)
 	{
@@ -59,7 +59,7 @@ class PddDdkGoodsRecommendGetRequest extends PopBaseHttpRequest
 		$this->setUserParam($params, "offset", $this->offset);
 		$this->setUserParam($params, "pid", $this->pid);
 		$this->setUserParam($params, "cat_id", $this->catId);
-		$this->setUserParam($params, "goods_ids", $this->goodsIds);
+		$this->setUserParam($params, "goods_sign_list", $this->goodsSignList);
 
 	}
 
@@ -113,9 +113,9 @@ class PddDdkGoodsRecommendGetRequest extends PopBaseHttpRequest
 		$this->catId = $catId;
 	}
 
-	public function setGoodsIds($goodsIds)
+	public function setGoodsSignList($goodsSignList)
 	{
-		$this->goodsIds = $goodsIds;
+		$this->goodsSignList = $goodsSignList;
 	}
 
 }
